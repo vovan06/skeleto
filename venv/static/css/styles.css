@@ -1,0 +1,55 @@
+html, body {
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: #0059b2;
+    text-decoration: none;
+}
+a:hover {
+    color: #CC0000;
+    text-decoration: underline;
+}
+
+.clear {clear: both;}
+
+ul.mainmenu {
+    list-style: none;
+    background:#3F4137;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    color: darkorchid;
+    font-size: 20px;
+    overflow: hidden;
+}
+ul.mainmenu li{
+    float: left;
+    margin: 18px 40px 0 50px;
+}
+ul.mainmenu li.last{float: right;}
+
+ul.mainmenu li a {
+    color: darkorchid ;
+    text-decoration: none;
+}
+ul.mainmenu li a:hover {
+    color: darkviolet;
+}
+
+div.content {
+    margin: 10px;
+}
+
+.from-contact label{
+     display: inline-block;
+    min-height: 80px;
+}
+.from-contact p {margin: 10px 0 10px 0;}
+.from-contact input[type=submit], textarea{
+    font-size: 16px;
+}

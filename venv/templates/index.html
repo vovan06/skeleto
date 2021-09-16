@@ -1,0 +1,93 @@
+<ul class="mainmenu">
+    {% for m in menu -%}
+</li><a href="{{m.url}}">{{m.name}}</a></li>
+    {% endfor -%}
+</ul>
+
+
+<head>
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+{% block title -%}
+{% if title %}
+    <title>амогус - {{title}}</title>
+{% else %}
+    <title>скам 2</title>
+{% endif %}
+{% endblock%}
+</head>
+
+<style>
+*{
+   padding: 0;
+   margin: 0;
+}
+.container-1, .container-2 {
+    display: flex;
+    /*align-items: strech;*/
+    /*flex-direction: row;*/
+}
+
+.container-2 {
+    justify-content:space-between;
+
+}
+
+.container-1 div, .container-2 div {
+    padding: 10px;
+    border: 1px solid silver;
+}
+
+.box-1 {
+   flex: 2;
+   order: 2;
+}
+
+.box-2 {
+   flex: 1;
+   order: 1;
+}
+
+.box-3 {
+   flex: 1;
+   order: 3;
+}
+
+.box {
+   flex-basis:;
+}
+
+.box-x {
+   flex-basis: 50%;
+}
+</style>
+
+<div class="container-1">
+    <div class="box-1">
+        <h3>Box 1</h3>
+        <p>text 1</p>
+    </div>
+    <div class="box-2">
+        <h3>Box 2</h3>
+        <p>text 2</p>
+    </div>
+    <div class="box-3">
+        <h3>Box 3</h3>
+        <p>text 3</p>
+    </div>
+</div>
+
+<div class="container-2">
+    <div class="box">
+        <h3>Реклама 1</h3>
+        <p>душистое мыло купи блин</p>
+    </div>
+    <div class="box-x">
+        <h3>Box</h3>
+        <p>text</p>
+    </div>
+    <div class="box">
+        <h3>Реклама 2</h3>
+        <p>ванга предвидела превращение путина в арбуз</p>
+    </div>
+</div>
+

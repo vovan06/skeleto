@@ -1,0 +1,15 @@
+
+<ul class="mainmenu">
+    {% for m in menu -%}
+</li><a href="{{m.url}}">{{m.name}}</a></li>
+    {% endfor -%}
+</ul>
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+
+{% block content %}
+<form action="/login" method="post" class="form-contact">
+<p><label>Имя: </label> <input type="text" name="username" value="" required /> 
+<p><label>Пароль: </label> <input type="password" name="psw" value="" required />
+<p><input type="submit" value="Далие" />
+</form>
+{% endblock %}    
