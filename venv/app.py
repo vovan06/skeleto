@@ -13,7 +13,7 @@ def index():
     return render_template('xindex.html', menu=menu)
 
 
-@app.route("/")
+@app.route("/start")
 def cs():
     print(url_for('cs') )
     return render_template('cs.html', menu=menu)
