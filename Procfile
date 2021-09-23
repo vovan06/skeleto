@@ -1,1 +1,1 @@
-web: gunicorn skeleto:app
+web: gunicorn app:app
