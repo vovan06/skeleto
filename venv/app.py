@@ -51,7 +51,10 @@ with app.test_request_context():
 
 if __name__ == "__main__":
     app.run(debug=True)
+Z
+
+#web: gunicorn app:app
+#process.env.PORT
 
 
 
-    
