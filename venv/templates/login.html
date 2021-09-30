@@ -1,4 +1,7 @@
-
+<head>
+<link rel="icon" href="data:;base64,=">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
 <ul class="mainmenu">
     {% for m in menu -%}
 </li><a href="{{m.url}}">{{m.name}}</a></li>

@@ -1,11 +1,9 @@
-<ul class="mainmenu">
-    {% for m in menu -%}
-</li><a href="{{m.url}}">{{m.name}}</a></li>
-    {% endfor -%}
-</ul>
 
 
 <head>
+<link rel="icon" href="data:;base64,=">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
 <link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
 {% block title -%}
 {% if title %}
@@ -15,6 +13,13 @@
 {% endif %}
 {% endblock%}
 </head>
+
+<ul class="mainmenu">
+    {% for m in menu -%}
+</li><a href="{{m.url}}">{{m.name}}</a></li>
+    {% endfor -%}
+</ul>
+
 
 <style>
 *{
